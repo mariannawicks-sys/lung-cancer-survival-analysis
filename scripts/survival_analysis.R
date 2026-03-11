@@ -7,6 +7,9 @@ library(survival)
 library(survminer)
 library(broom)
 
+# Load dataset
+lung_cancer_dataset <- read.csv("data/lung_cancer_dataset.csv")
+
 # Create survival status variable (1 = death, 0 = alive)
 lung_cancer_dataset$status <- ifelse(lung_cancer_dataset$Survived == "No", 1, 0)
 
