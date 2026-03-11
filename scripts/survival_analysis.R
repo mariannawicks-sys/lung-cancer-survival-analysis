@@ -47,3 +47,32 @@ summary(cox_model)
 
 # Check proportional hazards assumptionS
 cox.zph(cox_model)
+# ------------------------------
+# Survival Analysis by Smoking Status
+# ------------------------------
+
+# Kaplan-Meier survival model by smoking status
+km_smoking <- survfit(
+  surv_object ~ Smoking_Status,
+  data = lung_cancer_dataset
+)
+
+# Plot survival curves
+ggsurvplot(
+  km_smoking,
+  data = lung_cancer_dataset,
+  pval = TRUE,
+  conf.int = TRUE,
+  risk.table = TRUE,
+  xlab = "Survival Time (Months)",
+  ylab = "Overall Survival Probability",
+  title = "Kaplan-Meier Survival by Smoking Status"
+)
+
+# Cox model adjusting for age and stage
+cox_smoking <- coxph(
+  surv_object ~ Smoking_Status + Age + Cancer_Stage,
+  data = lung_cancer_dataset
+)
+
+summary(cox_smoking)
