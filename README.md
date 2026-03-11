@@ -60,8 +60,7 @@ The Cox proportional hazards model further confirmed that advanced cancer stages
 ## Example Output
 
 Kaplan–Meier survival curve by cancer stage:
-
-![Kaplan-Meier Plot](km_survival_plot.png)
+![Kaplan-Meier Plot](figures/km_survival_plot.png)
 
 ---
 
