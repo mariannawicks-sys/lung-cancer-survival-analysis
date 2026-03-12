@@ -82,6 +82,11 @@ Smoking status, age, and gender were not significantly associated with survival 
 ### Cox Proportional Hazards Model
 
 ![Cox Forest Plot](figures/cox_forest_plot.png)
+### Adjusted Survival Curves from Cox Model
+
+Adjusted survival curves illustrate predicted survival probabilities by cancer stage after controlling for age, gender, and smoking status.
+
+![Adjusted Survival](figures/adjusted_survival_curves.png)
 ## Tools Used
 
 - R
