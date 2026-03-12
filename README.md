@@ -52,6 +52,8 @@ All analyses were performed in **R** using the following packages:
 - `survminer`
 - `tidyverse`
 - `broom`
+
+
 ## Results
 
 ### Kaplan–Meier Survival Analysis
@@ -69,6 +71,7 @@ The multivariable Cox proportional hazards model further confirmed that advanced
 Stage II disease was associated with approximately nine times the hazard of death relative to Stage I, while Stage III and Stage IV disease demonstrated markedly higher hazards. 
 
 Smoking status, age, and gender were not significantly associated with survival after adjustment for cancer stage.
+
 ## Figures
 ### Kaplan–Meier Survival by Cancer Stage
 
