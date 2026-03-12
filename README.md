@@ -52,6 +52,23 @@ All analyses were performed in **R** using the following packages:
 - `survminer`
 - `tidyverse`
 - `broom`
+## Results
+
+### Kaplan–Meier Survival Analysis
+
+Kaplan–Meier survival curves demonstrated clear differences in overall survival across cancer stage groups. Patients diagnosed at earlier stages exhibited substantially higher survival probabilities over time compared with those diagnosed at later stages.
+
+### Log-Rank Test
+
+The log-rank test indicated that survival distributions differed significantly between cancer stages (p < 0.0001), suggesting that stage at diagnosis is strongly associated with survival outcomes.
+
+### Cox Proportional Hazards Model
+
+The multivariable Cox proportional hazards model further confirmed that advanced cancer stage was associated with substantially higher hazards of death compared with Stage I disease.
+
+Stage II disease was associated with approximately nine times the hazard of death relative to Stage I, while Stage III and Stage IV disease demonstrated markedly higher hazards. 
+
+Smoking status, age, and gender were not significantly associated with survival after adjustment for cancer stage.
 ## Figures
 ### Kaplan–Meier Survival by Cancer Stage
 
