@@ -80,3 +80,10 @@ Kaplan–Meier survival curve by cancer stage:
 A Cox proportional hazards model was used to estimate the association between cancer stage, smoking status, age, and gender with hazard of death.
 
 ![Cox Forest Plot](figures/cox_forest_plot.png)
+## Cox Proportional Hazards Model
+
+A multivariable Cox proportional hazards model was fitted to evaluate the association between cancer stage, smoking status, age, and gender with overall survival.
+
+Advanced cancer stage was strongly associated with increased hazard of death. Stage II disease was associated with approximately nine times the hazard of death compared with Stage I, while Stage III and Stage IV disease showed substantially higher hazards. Smoking status, age, and gender were not significantly associated with survival after adjustment for stage.
+
+![Cox Forest Plot](figures/cox_forest_plot.png)
