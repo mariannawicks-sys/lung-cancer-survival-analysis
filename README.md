@@ -62,7 +62,8 @@ The Cox proportional hazards model further confirmed that advanced cancer stages
 Kaplan–Meier survival curve by cancer stage:
 ![Kaplan-Meier Plot](figures/km_survival_plot.png)
 
----
+
+---![Smoking Survival Plot](figures/km_smoking_survival_plot.png)
 
 ## Tools Used
 - **R**
@@ -74,3 +75,8 @@ Kaplan–Meier survival curve by cancer stage:
 ---
 
 ## Project Structure
+## Cox Proportional Hazards Model
+
+A Cox proportional hazards model was used to estimate the association between cancer stage, smoking status, age, and gender with hazard of death.
+
+![Cox Forest Plot](figures/cox_forest_plot.png)
