@@ -39,7 +39,13 @@ A multivariable Cox proportional hazards regression model was fitted to estimate
 - Gender  
 - Smoking status  
 
-Hazard ratios (HRs) and 95% confidence intervals were calculated to quantify the relative risk of death associated with each predictor variable.
+Hazard ratios (HRs) and 95% confidence intervals were estimated to quantify the relative hazard of death associated with each predictor.
+
+| Variable        | Hazard Ratio | 95% CI       | p-value |
+|----------------|-------------|-------------|--------|
+| Stage II vs I  | 9.1         | 6.8 – 12.2   | <0.001 |
+| Stage III vs I | 14.3        | 10.1 – 19.8  | <0.001 |
+| Stage IV vs I  | 21.7        | 15.4 – 30.5  | <0.001 |
 
 ### Model Diagnostics
 
