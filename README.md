@@ -1,11 +1,15 @@
-Reproducible survival analysis project demonstrating Kaplan–Meier estimation, log-rank testing, and Cox proportional hazards modeling using simulated oncology data.
 # Lung Cancer Survival Analysis
+
+Reproducible survival analysis project demonstrating **Kaplan–Meier estimation, log-rank testing, and Cox proportional hazards modeling** using simulated oncology data.
+
 ## Project Overview
 
-This project investigates whether stage at diagnosis is associated with overall survival in patients with lung cancer. Survival analysis techniques including Kaplan–Meier curves, log-rank tests, and Cox proportional hazards models were used to evaluate survival differences across clinical variables.
+This project investigates whether **stage at diagnosis is associated with overall survival** in patients with lung cancer. Survival analysis techniques including Kaplan–Meier curves, log-rank tests, and Cox proportional hazards models were used to evaluate survival differences across clinical variables. The analysis was performed using R with the survival and survminer packages.
 
-The analysis was performed using R with the survival and survminer packages.
 ## Dataset
+The dataset is located in:
+
+`data/lung_cancer_dataset.csv`
 
 The dataset contains 1,500 simulated lung cancer patients with the following variables:
 
@@ -15,15 +19,7 @@ The dataset contains 1,500 simulated lung cancer patients with the following var
 - Gender
 - Survival time (months)
 - Vital status (alive or deceased)
-- ## Results
 
-### Kaplan-Meier Survival Curve
-
-![Kaplan Meier Plot](figures/km_curve.png)
-
-The dataset is located in:
-
-`data/lung_cancer_dataset.csv`
 
 ## Methods
 
@@ -63,7 +59,7 @@ All analyses were performed in **R** using the following packages:
 
 ### Kaplan–Meier Survival Analysis
 
-Kaplan–Meier survival curves demonstrated clear differences in overall survival across cancer stage groups. Patients diagnosed at earlier stages exhibited substantially higher survival probabilities over time compared with those diagnosed at later stages.
+Kaplan–Meier survival curves demonstrated **clear differences in overall survival across cancer stage groups**. Patients diagnosed at earlier stages exhibited substantially higher survival probabilities over time compared with those diagnosed at later stages.
 
 ### Log-Rank Test
 
@@ -78,16 +74,22 @@ Stage II disease was associated with approximately nine times the hazard of deat
 Smoking status, age, and gender were not significantly associated with survival after adjustment for cancer stage.
 
 ## Figures
+
 ### Kaplan–Meier Survival by Cancer Stage
 
 ![KM Stage](figures/km_survival_plot.png)
+
 ### Kaplan–Meier Survival by Smoking Status
 
 ![KM Smoking](figures/km_smoking_survival_plot.png)
+
 ### Cox Proportional Hazards Model
 
 ![Cox Forest Plot](figures/cox_forest_plot.png)
+
 ### Adjusted Survival Curves from Cox Model
+
+![Adjusted Survival](figures/adjusted_survival_curves.png)
 
 Adjusted survival curves illustrate predicted survival probabilities by cancer stage after controlling for age, gender, and smoking status.
 
