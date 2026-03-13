@@ -15,6 +15,11 @@ The dataset contains 1,500 simulated lung cancer patients with the following var
 - Gender
 - Survival time (months)
 - Vital status (alive or deceased)
+- ## Results
+
+### Kaplan-Meier Survival Curve
+
+![Kaplan Meier Plot](figures/km_curve.png)
 
 The dataset is located in:
 
