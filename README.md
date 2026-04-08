@@ -107,3 +107,40 @@ Adjusted survival curves illustrate predicted survival probabilities by cancer s
 - survminer
 - tidyverse
 - broom
+
+
+
+## 🔬 Methods
+
+- Logistic regression to model survival probability  
+- Multivariable adjustment: age, gender, cancer stage, smoking status, treatment type  
+- Synthetic outcome variable constructed to reflect clinically plausible survival patterns
+
+## 📊 Results
+
+- Advanced cancer stage strongly associated with lower survival probability  
+- Surgical treatment associated with higher survival odds compared to other modalities  
+- Smoking history associated with decreased survival  
+- Age showed a modest negative association with survival
+- ## 📈 Key Visualizations
+
+### Survival by Treatment Type
+![Survival by Treatment](figures/survival_by_treatment.png)
+
+### Survival by Cancer Stage
+![Survival by Stage](figures/survival_by_stage.png)
+
+### Age Distribution by Survival
+![Age by Survival](figures/age_by_survival.png)
+## 📊 Data
+
+This project uses a large synthetic dataset (~890,000 observations) containing demographic, clinical, and treatment variables.
+
+To ensure repository performance, a sampled dataset (n = 5,000) is included.
+
+The synthetic survival outcome was generated to reflect clinically plausible relationships between:
+- Cancer stage
+- Treatment modality
+- Smoking status
+
+- Update README with methods, results, and visualizations
