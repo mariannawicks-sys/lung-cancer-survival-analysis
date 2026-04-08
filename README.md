@@ -103,21 +103,19 @@ Stage II disease was associated with approximately nine times the hazard of deat
 
 Smoking status, age, and gender were not significantly associated with survival after adjustment for cancer stage.
 
-## Figures
 
 ## 📈 Key Visualizations
 
 ### Survival by Treatment Type
+
 ![Survival by Treatment](figures/survival_by_treatment.png)
 
----
-
 ### Survival by Cancer Stage
+
 ![Survival by Stage](figures/survival_by_stage.png)
 
----
+### Age Distribution by Survival Status
 
-### Age Distribution by Survival
 ![Age by Survival](figures/age_by_survival.png)
 
 ---
@@ -125,23 +123,20 @@ Smoking status, age, and gender were not significantly associated with survival 
 ## 📊 Advanced Survival Analysis
 
 ### Kaplan–Meier Survival Curve
-![KM Curve](figures/km_survival_plot.png)
 
----
+![Kaplan-Meier](figures/km_survival_plot.png)
 
-### Smoking Status Survival Curve
+### Survival by Smoking Status
+
 ![KM Smoking](figures/km_smoking_survival_plot.png)
 
----
+### Adjusted Survival Curves (Multivariable Model)
 
-### Adjusted Survival Curves
-![Adjusted](figures/adjusted_survival_curves.png)
-
----
+![Adjusted Survival](figures/adjusted_survival_curves.png)
 
 ### Cox Proportional Hazards Model (Forest Plot)
-![Cox Model](figures/cox_forest_plot.png)
 
+![Cox Model](figures/cox_forest_plot.png)
 
 ## Tools Used
 
