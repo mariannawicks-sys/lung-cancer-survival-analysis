@@ -1,10 +1,28 @@
 # Lung Cancer Survival Analysis
+The goal of this project is to demonstrate applied biostatistical modeling techniques in an oncology context, including data exploration, multivariable modeling, and interpretation of clinical predictors.
 
-Reproducible survival analysis project demonstrating **Kaplan–Meier estimation, log-rank testing, and Cox proportional hazards modeling** using simulated oncology data.
+This reproducible survival analysis project includes:
+- Kaplan–Meier estimation  
+- Log-rank testing  
+- Cox proportional hazards modeling  
+
+All analyses are performed using simulated data designed to reflect clinically plausible oncology scenarios.
+
 
 ## Project Overview
 
 This project investigates whether **stage at diagnosis is associated with overall survival** in patients with lung cancer. Survival analysis techniques including Kaplan–Meier curves, log-rank tests, and Cox proportional hazards models were used to evaluate survival differences across clinical variables. The analysis was performed using R with the survival and survminer packages.
+
+## 🔬 Methods
+
+- Logistic regression modeling of survival outcome  
+- Multivariable adjustment for:
+  - Age
+  - Gender
+  - Cancer stage
+  - Smoking status
+  - Treatment type  
+- Synthetic survival outcome constructed to reflect clinically plausible relationships between predictors and survival  
 
 ## Dataset
 The dataset is located in:
@@ -67,6 +85,12 @@ All analyses were performed in **R** using the following packages:
 
 Kaplan–Meier survival curves demonstrated **clear differences in overall survival across cancer stage groups**. Patients diagnosed at earlier stages exhibited substantially higher survival probabilities over time compared with those diagnosed at later stages.
 
+## 📊 Results
+
+- Advanced cancer stage was strongly associated with decreased survival probability  
+- Surgical treatment showed the highest survival likelihood compared to other modalities  
+- Smoking history was associated with reduced survival  
+- Increasing age showed a modest negative association with survival  
 ### Log-Rank Test
 
 The log-rank test indicated that survival distributions differed significantly between cancer stages (p < 0.0001), suggesting that stage at diagnosis is strongly associated with survival outcomes.
@@ -81,25 +105,44 @@ Smoking status, age, and gender were not significantly associated with survival 
 
 ## Figures
 
-### Kaplan–Meier Survival by Cancer Stage
+## 📈 Key Visualizations
 
-![KM Stage](figures/km_survival_plot.png)
+### Survival by Treatment Type
+![Survival by Treatment](figures/survival_by_treatment.png)
 
-### Kaplan–Meier Survival by Smoking Status
+---
 
+### Survival by Cancer Stage
+![Survival by Stage](figures/survival_by_stage.png)
+
+---
+
+### Age Distribution by Survival
+![Age by Survival](figures/age_by_survival.png)
+
+---
+
+## 📊 Advanced Survival Analysis
+
+### Kaplan–Meier Survival Curve
+![KM Curve](figures/km_survival_plot.png)
+
+---
+
+### Smoking Status Survival Curve
 ![KM Smoking](figures/km_smoking_survival_plot.png)
 
-### Cox Proportional Hazards Model
+---
 
-![Cox Forest Plot](figures/cox_forest_plot.png)
+### Adjusted Survival Curves
+![Adjusted](figures/adjusted_survival_curves.png)
 
-### Adjusted Survival Curves from Cox Model
+---
 
-![Adjusted Survival](figures/adjusted_survival_curves.png)
+### Cox Proportional Hazards Model (Forest Plot)
+![Cox Model](figures/cox_forest_plot.png)
 
-Adjusted survival curves illustrate predicted survival probabilities by cancer stage after controlling for age, gender, and smoking status.
 
-![Adjusted Survival](figures/adjusted_survival_curves.png)
 ## Tools Used
 
 - R
@@ -107,8 +150,6 @@ Adjusted survival curves illustrate predicted survival probabilities by cancer s
 - survminer
 - tidyverse
 - broom
-
-
 
 ## 🔬 Methods
 
@@ -122,25 +163,24 @@ Adjusted survival curves illustrate predicted survival probabilities by cancer s
 - Surgical treatment associated with higher survival odds compared to other modalities  
 - Smoking history associated with decreased survival  
 - Age showed a modest negative association with survival
-- ## 📈 Key Visualizations
 
-### Survival by Treatment Type
-![Survival by Treatment](figures/survival_by_treatment.png)
-
-### Survival by Cancer Stage
-![Survival by Stage](figures/survival_by_stage.png)
-
-### Age Distribution by Survival
-![Age by Survival](figures/age_by_survival.png)
 ## 📊 Data
 
-This project uses a large synthetic dataset (~890,000 observations) containing demographic, clinical, and treatment variables.
+This project uses a large synthetic dataset designed to reflect clinically plausible lung cancer patient characteristics.
 
-To ensure repository performance, a sampled dataset (n = 5,000) is included.
+Due to file size limitations, a sampled dataset (n = 5,000) is included in this repository.
 
-The synthetic survival outcome was generated to reflect clinically plausible relationships between:
-- Cancer stage
-- Treatment modality
-- Smoking status
+The dataset contains:
+- Demographics (age, gender)
+- Clinical variables (cancer stage, comorbidities)
+- Behavioral factors (smoking status)
+- Treatment types (surgery, chemotherapy, radiation, combined)
+- Survival outcome (synthetically generated)
+## 💻 How to Run
 
-
+1. Clone the repository  
+2. Open `scripts/survival_analysis.R` in RStudio  
+3. Run the script to reproduce:
+   - Data processing
+   - Model fitting
+   - Visualizations  
